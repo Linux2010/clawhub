@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="public/clawd-logo.png" alt="ClawHub" width="120">
+  <img src="public/clawd-logo.png" alt="SkillHub" width="120">
 </p>
 
-<h1 align="center">ClawHub</h1>
+<h1 align="center">SkillHub</h1>
 
 <p align="center">
   <a href="https://github.com/openclaw/clawhub/actions/workflows/ci.yml?branch=main"><img src="https://img.shields.io/github/actions/workflow/status/openclaw/clawhub/ci.yml?branch=main&style=for-the-badge" alt="CI status"></a>
@@ -10,13 +10,13 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
 </p>
 
-ClawHub is the **public skill registry for Clawdbot**: publish, version, and search text-based agent skills (a `SKILL.md` plus supporting files).
+SkillHub is the **public skill registry for Clawdbot**: publish, version, and search text-based agent skills (a `SKILL.md` plus supporting files).
 It's designed for fast browsing + a CLI-friendly API, with moderation hooks and vector search.
 
 onlycrabs.ai is the **SOUL.md registry**: publish and share system lore the same way you publish skills.
 
 <p align="center">
-  <a href="https://clawhub.ai">ClawHub</a> ·
+  <a href="https://clawhub.ai">SkillHub</a> ·
   <a href="https://onlycrabs.ai">onlycrabs.ai</a> ·
   <a href="VISION.md">Vision</a> ·
   <a href="docs/README.md">Docs</a> ·
@@ -39,7 +39,7 @@ onlycrabs.ai is the **SOUL.md registry**: publish and share system lore the same
 
 - Entry point is host-based: `onlycrabs.ai`.
 - On the onlycrabs.ai host, the home page and nav default to souls.
-- On ClawHub, souls live under `/souls`.
+- On SkillHub, souls live under `/souls`.
 - Soul bundles only accept `SOUL.md` for now (no extra files).
 
 ## How it works (high level)
@@ -47,7 +47,7 @@ onlycrabs.ai is the **SOUL.md registry**: publish and share system lore the same
 - Web app: TanStack Start (React, Vite/Nitro).
 - Backend: Convex (DB + file storage + HTTP actions) + Convex Auth (GitHub OAuth).
 - Search: OpenAI embeddings (`text-embedding-3-small`) + Convex vector search.
-- API schema + routes: `packages/schema` (`clawhub-schema`).
+- API schema + routes: `packages/schema` (`skillhub-schema`).
 
 ## CLI
 
